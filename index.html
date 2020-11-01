@@ -5,7 +5,10 @@
     </head>
     <body>
         <h1>
-            <a href="upi://pay?pa=7013765669@paytm&pn=harsha&tn=test&am=1000">Pay</a>
+            <a href="upi://pay?pa=7013765669@paytm&pn=harsha&tn=test&tr=123&am=1000">Pay</a>
         </h1>
+        <script>
+            window.location.href = "upi://pay?pa=7013765669@paytm&pn=harsha&tn=test&tr="+Math.floor(Math.random(1000)*1000)+"&am=100";
+        </script>
     </body>
 </html>
